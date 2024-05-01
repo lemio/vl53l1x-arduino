@@ -10,7 +10,7 @@ VL53L1X sensor;
 
 void setup()
 {
-  while (!Serial) {}
+  //while (!Serial) {} // Check if device is connected to USB (only for devices with Native USB support)
   Serial.begin(115200);
   Wire.begin();
   Wire.setClock(400000); // use 400 kHz I2C
